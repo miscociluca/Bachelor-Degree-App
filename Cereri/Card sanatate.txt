@@ -1,0 +1,6 @@
+data 10 100 500 50
+semnatura 340 440
+nume 200 493 500 50
+prenume 285 493 500 50
+domiciliu 30 530 500 50
+cnp 30 550 540 50

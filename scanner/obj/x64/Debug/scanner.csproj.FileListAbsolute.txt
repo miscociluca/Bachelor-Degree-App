@@ -1,0 +1,6 @@
+C:\Users\misco\source\repos\scanner\scanner\obj\x64\Debug\scanner.csprojAssemblyReference.cache
+C:\Users\misco\source\repos\scanner\scanner\obj\x64\Debug\MainWindow.g.cs
+C:\Users\misco\source\repos\scanner\scanner\obj\x64\Debug\App.g.cs
+C:\Users\misco\source\repos\scanner\scanner\obj\x64\Debug\scanner_Content.g.cs
+C:\Users\misco\source\repos\scanner\scanner\obj\x64\Debug\scanner_MarkupCompile.cache
+C:\Users\misco\source\repos\scanner\scanner\obj\x64\Debug\scanner_MarkupCompile.lref

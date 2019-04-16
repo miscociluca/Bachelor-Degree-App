@@ -1,0 +1,45 @@
+﻿<Window x:Class="scanner.Pdf_uri"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:scanner"
+         xmlns:controls="clr-namespace:scanner.Controls"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Cereri
+        " Height="631.4" Width="926.334"
+        WindowStartupLocation="CenterOwner"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"></ColumnDefinition>
+            <ColumnDefinition Width="74*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Name="Info" Grid.ColumnSpan="2" Margin="0,0,0,556.8">
+            <Label FontFamily="Champagne &amp; Limousines" Foreground="Purple" FontWeight="DemiBold" FontSize="20" HorizontalAlignment="Center">
+                Choose a request form to complete
+            </Label>
+        </Grid>
+        <Grid Name="lista_cereri" Grid.Column="0" Margin="0,40,2,30">
+            <Border BorderThickness="4" BorderBrush="Purple" materialDesign:ShadowAssist.ShadowDepth="Depth5">
+                <StackPanel>
+                    <TreeView Name="arbore_cereri" Height="526" Margin="0,0,0.4,0" FontSize="11" TreeViewItem.Selected="selectitem">
+
+                    </TreeView>
+
+                </StackPanel>
+            </Border>
+        </Grid>
+        <Grid Name="cerere_view" Margin="5,40,0,30" Grid.Column="1">
+            <Border BorderThickness="4" BorderBrush="Purple" materialDesign:ShadowAssist.ShadowDepth="Depth5">
+                <controls:PdfViewer x:Name="PDF" Loaded="PDF_Loaded"/>
+            </Border>
+        </Grid>
+        <Grid Name="down" Grid.ColumnSpan="2" Margin="0,560,0,0" Height="50">
+            <Button x:Name="lastframe" Content="Apply info"  Margin="620,0,190,12" VerticalAlignment="Center" Click="lastframe_Click"/>
+            <Button x:Name="printing" Content="Print"  Margin="813,0,21,12" VerticalAlignment="Center" Click="printpdf" Visibility="Hidden"/>
+
+        </Grid>
+    </Grid>
+</Window>

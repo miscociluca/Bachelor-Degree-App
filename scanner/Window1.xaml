@@ -1,0 +1,41 @@
+﻿<Window x:Class="scanner.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MultiBrowse"
+    Height="447.21" 
+    Width="523.2"
+    WindowStartupLocation="CenterOwner" Closing="Window_Closing"       
+        >
+
+
+    <StackPanel Margin="0,0,-0.4,-0.4">
+        <Grid Margin="0,0,0,50">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="0,26,0.4,-26.4">
+                <Label HorizontalAlignment="Center" Foreground="Purple" FontFamily="Champagne &amp; Limousines" FontSize="30">Enter your signature</Label>
+            </StackPanel>
+        </Grid>
+        <Border BorderThickness="5" BorderBrush="Purple">
+            <InkCanvas x:Name="MyInkCanvas" Margin="0,0,0.4,0" Height="259"/>
+        </Border>
+        <Grid Background="White" Margin="0,10,-0.2,10" Height="37">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="163*"/>
+                <ColumnDefinition Width="163*"/>
+                <ColumnDefinition Width="163*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="ClearButton" Grid.Row="0" Click="ClearButton_Click" Margin="30,2,30,2.8" Content="Retry" Height="Auto" HorizontalAlignment="Center" Width="90"/>
+            <Button x:Name="ContinueButton" Grid.Row="0" Click="UploadButton_Click" Content="Continue" Grid.Column="2" Margin="30,2,30,2.8" Height="Auto" HorizontalAlignment="Center" Width="90"/>
+            <Button x:Name="select_but" Grid.Row="0"  Margin="30,2,30,2.8" Content="Select" Grid.Column="1" Click="select_but_Click" Height="Auto" HorizontalAlignment="Center" Width="90"/>
+        </Grid>
+
+    </StackPanel>
+
+
+
+</Window>

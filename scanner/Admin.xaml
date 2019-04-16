@@ -1,0 +1,28 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ImageCropper;assembly="
+    x:Class="ImageCropper.Admin"
+    Title="Admin"
+    Background="Gainsboro"
+    WindowState="Maximized"
+    MinHeight="600"
+    MinWidth="600"
+    Icon="Resources/Icon1.ico"
+    WindowStartupLocation="CenterScreen"
+    >
+
+  <Window.Resources>
+
+  </Window.Resources>
+
+  <DockPanel x:Name="dp">
+    <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Background="Gray">
+      <Image x:Name="leftImage" Source="Resources/MagGlass.png" Width="180" Height="42" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+     
+    </StackPanel>
+        <StackPanel VerticalAlignment="Center">
+            <local:UcImageCropper x:Name="UcImageCropper" DockPanel.Dock="Top" Loaded="UcImageCropper_Loaded"/>
+        </StackPanel>
+    </DockPanel>
+</Window>
